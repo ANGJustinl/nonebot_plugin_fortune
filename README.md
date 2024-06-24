@@ -2,44 +2,40 @@
 
 # Fortune
 
-_🙏 今日运势 🙏_
+_🙏 今日运势 🙏_ 
+
+### Fork From [nonebot_plugin_fortune](https://github.com/MinatoAquaCrews/nonebot_plugin_fortune)
 
 </div>
 <p align="center">
 
-  <a href="https://github.com/MinatoAquaCrews/nonebot_plugin_fortune/blob/master/LICENSE">
-	<img src="https://img.shields.io/github/license/MinatoAquaCrews/nonebot_plugin_fortune?color=blue">
+  <a href="https://github.com/ANGJustinl/nonebot_plugin_fortune/blob/master/LICENSE">
+	<img src="https://img.shields.io/github/license/ANGJustinl/nonebot_plugin_fortune?color=blue">
   </a>
 
   <a href="https://github.com/nonebot/nonebot2">
-	<img src="https://img.shields.io/badge/nonebot2-^2.0.0rc4-green">
+	<img src="https://img.shields.io/badge/ANGANGBOT v3.0+-green">
   </a>
 
-  <a href="https://github.com/MinatoAquaCrews/nonebot_plugin_fortune/releases/tag/v0.4.12">
-	<img src="https://img.shields.io/github/v/release/MinatoAquaCrews/nonebot_plugin_fortune?color=orange">
+  <a href="https://github.com/ANGJustinl/nonebot_plugin_fortune/releases/tag/v0.4.12">
+	<img src="https://img.shields.io/github/v/release/ANGJustinl/nonebot_plugin_fortune?color=orange">
   </a>
 
-  <a href="https://www.codefactor.io/repository/github/MinatoAquaCrews/nonebot_plugin_fortune">
-	<img src="https://img.shields.io/codefactor/grade/github/MinatoAquaCrews/nonebot_plugin_fortune/master?color=red">
+  <a href="https://www.codefactor.io/repository/github/ANGJustinl/nonebot_plugin_fortune">
+	<img src="https://img.shields.io/codefactor/grade/github/ANGJustinl/nonebot_plugin_fortune/master?color=red">
   </a>
 
-  <a href="https://github.com/MinatoAquaCrews/nonebot_plugin_fortune">
-	<img src="https://img.shields.io/pypi/dm/nonebot_plugin_fortune">
-  </a>
-
-  <a href="https://results.pre-commit.ci/latest/github/MinatoAquaCrews/nonebot_plugin_fortune/master">
-	<img src="https://results.pre-commit.ci/badge/github/MinatoAquaCrews/nonebot_plugin_fortune/master.svg" alt="pre-commit.ci status">
+  <a href="https://results.pre-commit.ci/latest/github/ANGJustinl/nonebot_plugin_fortune/master">
+	<img src="https://results.pre-commit.ci/badge/github/ANGJustinl/nonebot_plugin_fortune/master.svg" alt="pre-commit.ci status">
   </a>
 
 </p>
 
 ## 版本
 
-[v0.4.12](https://github.com/MinatoAquaCrews/nonebot_plugin_fortune/releases/tag/v0.4.12)
+[v0.1](https://github.com/ANGJustinl/nonebot_plugin_fortune/releases/tag/v0.1)
 
 ⚠️ 适配nonebot2 `^2.0.0rc4`
-
-👉 [如何添加更多的抽签主题资源？欢迎贡献！🙏](https://github.com/MinatoAquaCrews/nonebot_plugin_fortune/blob/master/How-to-add-new-theme.md)
 
 ## 安装
 
@@ -109,62 +105,6 @@ _🙏 今日运势 🙏_
    指定凯露签，由于存在两张凯露的签底，配置凯露签的**路径列表**即可；其余类似，**请确保图片路径、格式输入正确**！
 
 5. 占卜一下你的今日运势！🎉
-
-## 功能
-
-1. 随机抽取今日运势，配置多种抽签主题：原神、PCR、Hololive、东方、东方归言录、明日方舟、赛马娘、阴阳师、碧蓝航线、碧蓝幻想、战双帕弥什，galgame主题等……
-
-2. 可指定主题抽签；
-
-3. 每群每人一天限抽签1次，0点刷新（贪心的人是不会有好运的🤗）抽签信息并清除 `resource/out` 下生成的图片；
-
-4. 抽签的信息会保存在 `resource/fortune_data.json` 内；群抽签设置及指定抽签规则保存在 `resource/fortune_setting.json` 内；抽签生成的图片当天会保存在 `resource/out` 下；
-
-5. `fortune_setting.json` 已预置明日方舟、Asoul、原神、东方、Hololive、李清歌的指定抽签规则；
-
-6. 🔥 更多的运势文案！`copywriting.json` 整合了19种运势及共计700+条文案！
-
-   ⚠️ 文案资源来自于Hololive早安系列2019年第6.10～9.22期，有修改。
-
-7. TODO in `v0.5.0` ✨
-
-   - [ ] 优化设置主题、指定主题、及检索的方式；
-   - [ ] 文案排版算法；
-   - [ ] 新增功能：每日星座运势；
-   - [x] 新增功能：资源缺失检查、自动下载；
-   - [x] 新增资源：新的抽签主题资源！
-
-## 命令
-
-1. 一般抽签：今日运势、抽签、运势；
-
-2. 指定主题抽签：[xx抽签]，例如：pcr抽签、holo抽签、碧蓝抽签；
-
-3. 指定签底并抽签：指定[xxx]签，在 `resource/fortune_setting.json` 内手动配置；
-
-   ⚠️ 将在 `v0.5.0` 弃用
-
-4. [群管或群主或超管] 配置抽签主题：
-
-   - 设置[原神/pcr/东方/vtb/方舟]签：设置群抽签主题；
-
-   - 重置（抽签）主题：设置群抽签主题为随机；
-
-5. 抽签设置：查看当前群抽签主题的配置；
-
-6. 今日运势帮助：显示插件帮助文案；
-
-7. 查看（抽签）主题：显示当前已启用主题；
-
-## 效果
-
-测试效果出自群聊。
-
-![display](./display.jpg)
-
-## 本插件改自
-
-[opqqq-plugin](https://github.com/opq-osc/opqqq-plugin)
 
 ## 抽签图片及文案资源
 
