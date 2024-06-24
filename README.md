@@ -58,13 +58,11 @@ _🙏 今日运势 🙏_
    ```shell
    AMAZING_GRACE_FLAG=false    # 奇异恩典·圣夜的小镇
    ARKNIGHTS_FLAG=true         # 明日方舟
-   ASOUL_FLAG=true             # A-SOUL
    AZURE_FLAG=true             # 碧蓝航线
    DC4_FLAG=false              # dc4
    EINSTEIN_FLAG=true          # 爱因斯坦携爱敬上
    GENSHIN_FLAG=true           # 原神
    GRANBLUE_FANTASY_FLAG=true  # 碧蓝幻想
-   HOLOLIVE_FLAG=true          # Hololive
    HOSHIZORA_FLAG=true         # 星空列车与白的旅行
    LIQINGGE_FLAG=true          # 李清歌
    ONMYOJI_FLAG=false          # 阴阳师
